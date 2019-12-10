@@ -15,15 +15,15 @@
 				<div class="smallis-footer-columns smallis-grid-container">
 
 					<div class="smallis-footer-column smallis-grid-child-1">
-						Here be widgets
+						<?php dynamic_sidebar( 'footer1-sidebar' ); ?>
 					</div><!-- smallis footer column -->
 					
 					<div class="smallis-footer-column smallis-grid-child-1">
-						Here be widgets
+						<?php dynamic_sidebar( 'footer2-sidebar' ); ?>
 					</div><!-- smallis footer column -->
 
 					<div class="smallis-footer-column smallis-grid-child-1">
-						Here be widgets
+						<?php dynamic_sidebar( 'footer3-sidebar' ); ?>
 					</div><!-- smallis footer column -->
 
 				</div><!-- smallis footer columns -->

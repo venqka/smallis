@@ -2,10 +2,14 @@ footer {
 	background-color: $stormcloud;
 	padding: 20px 0;
 
-	color: $neoncarrot;
+	color: $white;
 
 	p {
 		color: $white;
+	}
+
+	a {
+		color: $neoncarrot;
 	}
 
 	.smallis-footer-columns {
@@ -13,7 +17,20 @@ footer {
 		.smallis-footer-column {
 			.widget {
 				list-style: none;
+
+				.widgettitle {
+					color: $neoncarrot;
+				}
 			}
+		}
+	}
+
+	.smallis-footer-copyright {
+		
+		margin: 20px auto;
+
+		.smallis-footer-copyright-right {
+ 		   text-align: right;
 		}
 	}
 }

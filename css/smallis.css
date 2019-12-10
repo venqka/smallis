@@ -4,8 +4,6 @@
 *	Where variables are defined
 *
 */
-/* Colors */
-/* End Colors */
 /*
 *
 *	Main scss file
@@ -19,3 +17,14 @@ body {
     color: #4f6367; }
   body footer {
     background-color: #818479; }
+  body .smallis-container {
+    margin: 0px auto; }
+    @media (min-width: 767px) {
+      body .smallis-container {
+        width: 767px; } }
+    @media (min-width: 992px) {
+      body .smallis-container {
+        width: 992px; } }
+    @media (min-width: 1200px) {
+      body .smallis-container {
+        width: 1200px; } }

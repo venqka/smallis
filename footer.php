@@ -30,7 +30,7 @@
 				<div class="smallis-footer-copyright smallis-grid-container">
 
 					<div class="smallis-footer-copyright-left smallis-grid-child-1">
-						<p>Prowdly Powered by Wordpress</p>
+						<p>Prowdly Powered by WordPress</p>
 					</div><!-- smallis footer copyright left-->
 					
 					<div class="smallis-footer-copyright-right smallis-grid-child-1">

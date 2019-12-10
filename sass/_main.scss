@@ -14,7 +14,14 @@ body {
 	}
 
 	footer {
-		background-color: #818479;
+		background-color: $stormcloud;
+		padding: 20px 0;
+
+		color: $neoncarrot;
+
+		p {
+			color: $white;
+		}
 	}
 
 	.smallis-container {

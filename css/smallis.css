@@ -1,0 +1,20 @@
+/*
+*
+*	Config scss file
+*	Where variables are defined
+*
+*/
+/* Colors */
+/* End Colors */
+/*
+*
+*	Main scss file
+*	General styles
+*
+*/
+body {
+  background-color: #d8e2dc; }
+  body p {
+    color: #4f6367; }
+  body footer {
+    background-color: #818479; }

@@ -13,7 +13,8 @@
 *
 */
 body {
-  background-color: #d8e2dc; }
+  background-color: #d8e2dc;
+  margin: 0px; }
   body p {
     color: #4f6367; }
   body footer {

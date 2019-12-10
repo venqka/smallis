@@ -17,12 +17,6 @@ body {
     color: #4f6367; }
   body h3 {
     color: #4f6367; }
-  body footer {
-    background-color: #4f6367;
-    padding: 20px 0;
-    color: #ffa552; }
-    body footer p {
-      color: #FFF; }
   body .smallis-container {
     margin: 0px auto; }
     @media (min-width: 767px) {
@@ -59,6 +53,23 @@ header .smallis-navigation-wrap ul li {
     font-weight: bold; }
     header .smallis-navigation-wrap ul li a:hover {
       color: #ffa552; }
+
+footer {
+  background-color: #4f6367;
+  padding: 20px 0;
+  color: #FFF; }
+  footer p {
+    color: #FFF; }
+  footer a {
+    color: #ffa552; }
+  footer .smallis-footer-columns .smallis-footer-column .widget {
+    list-style: none; }
+    footer .smallis-footer-columns .smallis-footer-column .widget .widgettitle {
+      color: #ffa552; }
+  footer .smallis-footer-copyright {
+    margin: 20px auto; }
+    footer .smallis-footer-copyright .smallis-footer-copyright-right {
+      text-align: right; }
 
 .page .page-title-container {
   background-color: #4f6367;

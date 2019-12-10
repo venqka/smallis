@@ -1,0 +1,19 @@
+/*
+*
+*	Main scss file
+*	General styles
+*
+*/
+// @import '_config.scss';
+
+body {
+	background-color: $gainsboro;
+
+	p {
+		color: $stormcloud;
+	}
+
+	footer {
+		background-color: #818479;
+	}
+}

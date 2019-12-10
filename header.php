@@ -32,14 +32,14 @@
 		<header>
 
 			<div class="smallis-container">
-				<div class="smallis-header-wrap">
+				<div class="smallis-header-wrap smallis-grid-container">
 
-					<div class="smallis-site-info">
+					<div class="smallis-site-info smallis-grid-child-1">
 
 						<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 					</div><!-- smallis site info -->
 					
-					<div class="smallis-navigation-wrap">
+					<div class="smallis-navigation-wrap smallis-grid-child-1">
 						<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 					</div><!-- smallis navigation wrap -->	
 				</div><!-- smallis header wrap-->

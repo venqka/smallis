@@ -26,7 +26,16 @@ if( !function_exists( 'smallis_enqueue' ) ) {
 if( !function_exists( 'smallis_supports' ) ) {
 
 	function smallis_supports() {
-		
+
 	}
 	add_action( 'after_theme_setup', 'smallis_supports' );
+}
+
+if( !function_exists( 'smallis_navigation' ) ) {
+	
+	function smallis_navigation() {
+		register_nav_menu( 'main-menu',__( 'Smallis Menu', 'smallis' ) );
+	}
+	add_action( 'init', 'smallis_navigation' );
+
 }

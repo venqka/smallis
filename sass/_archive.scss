@@ -1,0 +1,39 @@
+.archive {
+	.archive-title-container {
+		background-color: $stormcloud;
+		color: $neoncarrot;
+		padding: 10px 0px;
+		font-weight: bold;
+	}
+
+	.smallis-posts-container {
+		
+		margin: 20px auto;
+		grid-column-gap: 20px;
+  		grid-row-gap: 15px;
+  		grid-template-columns: 1fr 1fr 1fr;
+
+		.smallis-post {
+
+			border: 2px solid $stormcloud;
+
+			a {
+				text-decoration: none;
+			}
+
+			.smallis-post-image-container {
+	 		   height: 300px;
+	    		background-size: cover;
+	    		background-position: center center;
+			}
+
+			.smallis-post-title-container {
+				padding: 10px;
+			}
+
+			.smallis-post-exceprt-container {
+				padding: 10px;
+			}
+		}
+	}	
+}

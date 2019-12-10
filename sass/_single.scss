@@ -1,0 +1,51 @@
+.single {
+
+	.post-title-container {
+		background-color: $stormcloud;
+		color: $neoncarrot;
+		padding: 10px 0px;
+		font-weight: bold;
+	}
+
+	.post-image-container {
+
+	    height: 500px;
+	    background-size: cover;
+	    background-position: center center;
+	    position: relative;
+
+	    .post-title-container {
+	    	background-color: rgba(78,98,102,0.6);
+			color: #fff;
+			padding: 10px;
+			font-weight: bold;
+			position: absolute;
+			bottom: 0px;
+			width: 100%;
+			left: 0px;
+			box-sizing: border-box;
+	    }
+	}
+
+	.smallis-post-container {
+    	grid-template-columns: 75% 25%;
+		margin: 20px auto;
+	}
+
+	.post-sidebar {
+
+		border-left: 1px solid $stormcloud;
+		padding: 0px 20px;
+		// min-width: 300px;
+
+		li {
+			list-style: none;
+			color: $stormcloud;
+			font-weight: bold;
+
+			a {
+				color: $neoncarrot;
+			}
+		}
+	}
+}

@@ -15,6 +15,8 @@ body {
   margin: 0px; }
   body p {
     color: #4f6367; }
+  body h3 {
+    color: #4f6367; }
   body footer {
     background-color: #4f6367;
     padding: 20px 0;
@@ -63,3 +65,27 @@ header .smallis-navigation-wrap ul li {
   color: #ffa552;
   padding: 10px 0px;
   font-weight: bold; }
+
+.archive .archive-title-container {
+  background-color: #4f6367;
+  color: #ffa552;
+  padding: 10px 0px;
+  font-weight: bold; }
+
+.archive .smallis-posts-container {
+  margin: 20px auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr; }
+  .archive .smallis-posts-container .smallis-post {
+    border: 2px solid #4f6367; }
+    .archive .smallis-posts-container .smallis-post a {
+      text-decoration: none; }
+    .archive .smallis-posts-container .smallis-post .smallis-post-image-container {
+      height: 300px;
+      background-size: cover;
+      background-position: center center; }
+    .archive .smallis-posts-container .smallis-post .smallis-post-title-container {
+      padding: 10px; }
+    .archive .smallis-posts-container .smallis-post .smallis-post-exceprt-container {
+      padding: 10px; }

@@ -100,3 +100,39 @@ footer {
       padding: 10px; }
     .archive .smallis-posts-container .smallis-post .smallis-post-exceprt-container {
       padding: 10px; }
+
+.single .post-title-container {
+  background-color: #4f6367;
+  color: #ffa552;
+  padding: 10px 0px;
+  font-weight: bold; }
+
+.single .post-image-container {
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+  position: relative; }
+  .single .post-image-container .post-title-container {
+    background-color: rgba(78, 98, 102, 0.6);
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    box-sizing: border-box; }
+
+.single .smallis-post-container {
+  grid-template-columns: 75% 25%;
+  margin: 20px auto; }
+
+.single .post-sidebar {
+  border-left: 1px solid #4f6367;
+  padding: 0px 20px; }
+  .single .post-sidebar li {
+    list-style: none;
+    color: #4f6367;
+    font-weight: bold; }
+    .single .post-sidebar li a {
+      color: #ffa552; }

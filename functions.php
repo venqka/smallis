@@ -22,3 +22,11 @@ if( !function_exists( 'smallis_enqueue' ) ) {
 	}
 	add_action( 'wp_enqueue_scripts', 'smalls_enqueue' );
 }
+
+if( !function_exists( 'smallis_supports' ) ) {
+
+	function smallis_supports() {
+		
+	}
+	add_action( 'after_theme_setup', 'smallis_supports' );
+}

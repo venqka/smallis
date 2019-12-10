@@ -26,9 +26,9 @@ if( !function_exists( 'smallis_enqueue' ) ) {
 if( !function_exists( 'smallis_supports' ) ) {
 
 	function smallis_supports() {
-
+		add_theme_support( 'post-thumbnails' ); 
 	}
-	add_action( 'after_theme_setup', 'smallis_supports' );
+	add_action( 'after_setup_theme', 'smallis_supports' );
 }
 
 if( !function_exists( 'smallis_navigation' ) ) {

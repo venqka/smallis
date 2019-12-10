@@ -8,7 +8,7 @@
 body {
 	background-color: $gainsboro;
 	margin: 0px;
-	
+
 	p {
 		color: $stormcloud;
 	}
@@ -16,4 +16,21 @@ body {
 	footer {
 		background-color: #818479;
 	}
+
+	.smallis-container {
+		margin: 0px auto;
+		
+		@include respond-to('small') {
+			width: map-get($breakpoints, 'small');
+		}
+
+		@include respond-to('medium') {
+			width: map-get($breakpoints, 'medium');
+		}
+
+		@include respond-to('large') {
+			width: map-get($breakpoints, 'large');
+		}
+	}			
+
 }

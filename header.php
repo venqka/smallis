@@ -31,15 +31,17 @@
 
 		<header>
 
-			<div class="smallis-header-wrap">
+			<div class="smallis-container">
+				<div class="smallis-header-wrap">
 
-				<div class="smallis-site-info">
+					<div class="smallis-site-info">
 
-					<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-				</div><!-- smallis site info -->
-				
-				<div class="smallis-navigation-wrap">
+						<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+					</div><!-- smallis site info -->
+					
+					<div class="smallis-navigation-wrap">
 
-				</div><!-- smallis navigation wrap -->	
-			</div><!-- smallis header wrap-->		
+					</div><!-- smallis navigation wrap -->	
+				</div><!-- smallis header wrap-->
+			</div><!-- smallis-container-->			
 		</header>

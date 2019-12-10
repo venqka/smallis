@@ -41,4 +41,16 @@ body {
 		grid-row: 1/2;
 	}
 
+	.align-baseline {
+		align-content: baseline;
+	}
+
+	.justify-end {
+		justify-self: end;
+	}
+
+	.justify-start {
+		justify-self: start;
+	}
+
 }

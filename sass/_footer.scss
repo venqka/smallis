@@ -7,4 +7,13 @@ footer {
 	p {
 		color: $white;
 	}
+
+	.smallis-footer-columns {
+
+		.smallis-footer-column {
+			.widget {
+				list-style: none;
+			}
+		}
+	}
 }

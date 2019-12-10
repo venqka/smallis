@@ -16,7 +16,11 @@ body {
   body p {
     color: #4f6367; }
   body footer {
-    background-color: #818479; }
+    background-color: #4f6367;
+    padding: 20px 0;
+    color: #ffa552; }
+    body footer p {
+      color: #FFF; }
   body .smallis-container {
     margin: 0px auto; }
     @media (min-width: 767px) {
@@ -28,3 +32,34 @@ body {
     @media (min-width: 1200px) {
       body .smallis-container {
         width: 1200px; } }
+  body .smallis-grid-container {
+    display: grid; }
+  body .smallis-grid-child-1 {
+    grid-row: 1/2; }
+  body .align-baseline {
+    align-content: baseline; }
+  body .justify-end {
+    justify-self: end; }
+  body .justify-start {
+    justify-self: start; }
+
+header .smallis-site-info h1 a {
+  text-decoration: none;
+  color: #4f6367; }
+
+header .smallis-navigation-wrap ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 10px; }
+  header .smallis-navigation-wrap ul li a {
+    text-decoration: none;
+    color: #4f6367;
+    font-weight: bold; }
+    header .smallis-navigation-wrap ul li a:hover {
+      color: #ffa552; }
+
+.page .page-title-container {
+  background-color: #4f6367;
+  color: #ffa552;
+  padding: 10px 0px;
+  font-weight: bold; }

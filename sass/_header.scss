@@ -1,9 +1,28 @@
 header {
+
+	.smallis-site-info {
+		h1 {
+			a {
+				text-decoration: none;
+				color: $stormcloud;
+			}
+		}
+	}
 	.smallis-navigation-wrap {
 		ul {
 			li {
 				list-style: none;
 				display: inline-block;
+				margin: 0px 10px;
+				
+				a {
+					text-decoration: none;
+					color: $stormcloud;
+					font-weight: bold;
+					&:hover {
+						color: $neoncarrot;
+					}
+				}
 			}
 		}
 	}

@@ -16,7 +16,7 @@
 
 get_header();
 ?>
-	<div class="smallis-container">
+	
 		<section id="primary" class="content-area">
 			<main id="main" class="site-main">
 
@@ -26,7 +26,18 @@ get_header();
 				// Load posts loop.
 				while ( have_posts() ) {
 					the_post();
-					echo the_content();
+?>
+					<div class="page-title-container">
+						<div class="smallis-container">					
+							<?php echo the_title(); ?>
+						</div><!-- smallis container -->
+					</div><!-- page title container -->
+					<div class="smallis-container">
+<?php
+						echo the_content();
+?>
+					</div><!-- smallis container -->
+<?php				
 				}
 			} 
 			
@@ -34,6 +45,6 @@ get_header();
 
 			</main><!-- .site-main -->
 		</section><!-- .content-area -->
-	</div><!-- smallis container -->	
+		
 <?php
 get_footer();

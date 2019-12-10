@@ -12,7 +12,8 @@
 */
 body {
   background-color: #d8e2dc;
-  margin: 0px; }
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif; }
   body p {
     color: #4f6367; }
   body h3 {

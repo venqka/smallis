@@ -40,7 +40,7 @@
 					</div><!-- smallis site info -->
 					
 					<div class="smallis-navigation-wrap">
-
+						<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 					</div><!-- smallis navigation wrap -->	
 				</div><!-- smallis header wrap-->
 			</div><!-- smallis-container-->			

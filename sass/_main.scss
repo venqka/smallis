@@ -33,4 +33,12 @@ body {
 		}
 	}			
 
+	.smallis-grid-container {
+		display: grid;
+	}
+
+	.smallis-grid-child-1 {
+		grid-row: 1/2;
+	}
+
 }

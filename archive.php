@@ -29,7 +29,7 @@ get_header();
 						the_post();
 ?>
 						<div class="smallis-post">
-							<a href="<? echo get_the_post_permalink(); ?>" title="<?php echo the_title(); ?>">
+							<a href="<?php echo get_the_permalink(); ?>" title="<?php echo the_title(); ?>">
 								<div class="smallis-post-image-container" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')">
 								</div>
 								<div class="smallis-post-title-container">

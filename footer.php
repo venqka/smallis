@@ -12,7 +12,7 @@
 
 		<footer>
 			<div class="smallis-container">
-				<div class="smallis-footer-columns smallis-grid-container">
+				<div class="smallis-footer-columns smallis-grid-container justify-space-between grid-wrap">
 
 					<div class="smallis-footer-column smallis-grid-child-1">
 						<?php dynamic_sidebar( 'footer1-sidebar' ); ?>
@@ -27,7 +27,7 @@
 					</div><!-- smallis footer column -->
 
 				</div><!-- smallis footer columns -->
-				<div class="smallis-footer-copyright smallis-grid-container">
+				<div class="smallis-footer-copyright smallis-grid-container justify-space-between align-baseline">
 
 					<div class="smallis-footer-copyright-left smallis-grid-child-1">
 						<p>Prowdly Powered by WordPress</p>

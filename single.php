@@ -30,13 +30,13 @@ get_header();
 ?>
 					
 					<div class="smallis-container">
-						<div class="smallis-grid-container smallis-post-container">
-							<div class="post-content">
+						<div class="smallis-grid-container smallis-post-container justify-space-between">
+							<div class="post-content smallis-grid-child-2">
 <?php
 								echo the_content();
 ?>
 							</div>
-							<div class="post-sidebar justify-end">
+							<div class="post-sidebar smallis-grid-child-1">
 <?php							
 								dynamic_sidebar( 'main-sidebar' );
 ?>

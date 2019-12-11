@@ -23,12 +23,12 @@ get_header();
 			if ( have_posts() ) {
 ?>
 				<div class="smallis-container">
-					<div class="smallis-grid-container smallis-posts-container">
+					<div class="smallis-posts-container smallis-grid-container justify-space-between grid-wrap">
 <?php
 					while ( have_posts() ) {
 						the_post();
 ?>
-						<div class="smallis-post">
+						<div class="smallis-post smallis-grid-child-1">
 							<a href="<?php echo get_the_permalink(); ?>" title="<?php echo the_title(); ?>">
 								<div class="smallis-post-image-container" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')">
 								</div>

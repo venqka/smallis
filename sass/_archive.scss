@@ -9,14 +9,15 @@
 	.smallis-posts-container {
 		
 		margin: 20px auto;
-		grid-column-gap: 20px;
-  		grid-row-gap: 15px;
-  		grid-template-columns: 1fr 1fr 1fr;
+		
 
 		.smallis-post {
 
 			border: 2px solid $stormcloud;
-
+			-ms-flex-preferred-size: 300px;
+			flex-basis: 300px;
+			margin: 10px;
+			
 			a {
 				text-decoration: none;
 			}

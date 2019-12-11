@@ -35,24 +35,51 @@ body {
 		}
 	}			
 
+	//Grid helpers
 	.smallis-grid-container {
-		display: grid;
-	}
-
-	.smallis-grid-child-1 {
-		grid-row: 1/2;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
 	}
 
 	.align-baseline {
-		align-content: baseline;
+		align-self: baseline;
 	}
 
-	.justify-end {
-		justify-self: end;
+	.align-baseline {
+		-ms-flex-item-align: baseline;
+		align-self: baseline;
 	}
 
-	.justify-start {
-		justify-self: start;
+	.justify-space-around {
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
 	}
 
+	.justify-space-between {
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+
+	.grid-wrap {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	.smallis-grid-child-1 {
+		-webkit-box-flex: 1;
+		-ms-flex: 1 1;
+		flex: 1 1;
+	}
+
+	.smallis-grid-child-2 {
+		-webkit-box-flex: 2;
+		-ms-flex: 2 2;
+		flex: 2 2;
+	}
+
+	.clear-fix {
+		clear: both;
+	}
 }

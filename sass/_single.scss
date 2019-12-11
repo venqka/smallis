@@ -28,24 +28,31 @@
 	}
 
 	.smallis-post-container {
-    	grid-template-columns: 75% 25%;
-		margin: 20px auto;
-	}
+    	margin: 20px auto;
 
-	.post-sidebar {
+    	.post-content {
+    		-ms-flex-preferred-size: 700px;
+			flex-basis: 700px;
+			margin-right: 10px;
+    	}
 
-		border-left: 1px solid $stormcloud;
-		padding: 0px 20px;
-		// min-width: 300px;
+    	.post-sidebar {
 
-		li {
-			list-style: none;
-			color: $stormcloud;
-			font-weight: bold;
+			border-left: 1px solid $stormcloud;
+			padding: 0px 20px;
+			-ms-flex-preferred-size: 200px;
+			flex-basis: 200px;
 
-			a {
-				color: $neoncarrot;
+			li {
+				list-style: none;
+				color: $stormcloud;
+				font-weight: bold;
+
+				a {
+					color: $neoncarrot;
+				}
 			}
 		}
 	}
+
 }

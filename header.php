@@ -32,14 +32,14 @@
 		<header>
 
 			<div class="smallis-container">
-				<div class="smallis-header-wrap smallis-grid-container">
+				<div class="smallis-header-wrap smallis-grid-container justify-space-between">
 
-					<div class="smallis-site-info smallis-grid-child-1 align-baseline justify-start">
+					<div class="smallis-site-info align-baseline">
 
 						<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 					</div><!-- smallis site info -->
 					
-					<div class="smallis-navigation-wrap smallis-grid-child-1 align-baseline justify-end">
+					<div class="smallis-navigation-wrap align-baseline">
 						<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 					</div><!-- smallis navigation wrap -->	
 				</div><!-- smallis header wrap-->

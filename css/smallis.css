@@ -118,6 +118,24 @@ footer {
   padding: 10px 0px;
   font-weight: bold; }
 
+.page .smallis-page-container {
+  margin: 20px auto; }
+  .page .smallis-page-container .page-content {
+    -ms-flex-preferred-size: 700px;
+    flex-basis: 700px;
+    margin-right: 10px; }
+  .page .smallis-page-container .page-sidebar {
+    border-left: 1px solid #4f6367;
+    padding: 0px 20px;
+    -ms-flex-preferred-size: 200px;
+    flex-basis: 200px; }
+    .page .smallis-page-container .page-sidebar li {
+      list-style: none;
+      color: #4f6367;
+      font-weight: bold; }
+      .page .smallis-page-container .page-sidebar li a {
+        color: #ffa552; }
+
 .error404 .page-title-container {
   background-color: #4f6367;
   color: #ffa552;

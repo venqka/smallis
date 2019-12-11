@@ -1,0 +1,46 @@
+.smallis-navigation-wrap {
+		ul {
+			li {
+				list-style: none;
+				display: inline-block;
+				margin: 0px 10px;
+				position: relative;
+				a {
+					text-decoration: none;
+					color: $stormcloud;
+					font-weight: bold;
+					&:hover {
+						color: $neoncarrot;
+					}
+				}
+				
+				.sub-menu {
+					position: absolute;
+					margin: 0px;
+					display: none;
+					padding: 0px;
+					width: 200px;
+					background-color: $stormcloud;
+					
+					li {
+						width: 100%;
+						padding: 10px;
+						margin: 0px;
+						border-bottom: 1px solid $soap;
+						box-sizing: border-box;
+						text-align: center;
+						
+						&:last-child {
+							border-bottom: none;
+						}
+						a {
+							color: $neoncarrot;
+							display: block;
+							width: 100%;
+							height: 100%;
+						}
+					}
+				}
+			}
+		}
+	}

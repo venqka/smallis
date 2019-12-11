@@ -132,6 +132,25 @@ footer {
   padding: 0px;
   margin: 0px; }
 
+.search-results .page-title-container {
+  background-color: #4f6367;
+  color: #ffa552;
+  padding: 10px 0px;
+  font-weight: bold; }
+  .search-results .page-title-container h3 {
+    color: #ffa552; }
+
+.search-results .smallis-search-results {
+  margin: 20px auto; }
+  .search-results .smallis-search-results .smallis-search-result {
+    -ms-flex-preferred-size: 300px;
+    flex-basis: 300px;
+    margin: 10px 20px; }
+    .search-results .smallis-search-results .smallis-search-result a {
+      text-decoration: none; }
+      .search-results .smallis-search-results .smallis-search-result a .page-title-container {
+        padding: 10px; }
+
 .archive .archive-title-container {
   background-color: #4f6367;
   color: #ffa552;

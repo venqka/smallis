@@ -13,8 +13,6 @@ if( !function_exists( 'smallis_enqueue' ) ) {
 
 	function smalls_enqueue() {
 
-		wp_enqueue_style( 'montserrat', 'https://fonts.googleapis.com/css?family=Montserrat&display=swap', false );//load localy later
-
 		//enqueue Smalls styles
 		wp_enqueue_style( 'smalli-styles', get_stylesheet_directory_uri() . '/style.css', array(), '1.0', false );
 

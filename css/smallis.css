@@ -76,6 +76,9 @@ body {
     flex: 2 2; }
   body .clear-fix {
     clear: both; }
+  body .smallis-center-content {
+    width: 50%;
+    margin: 20px auto; }
 
 header .smallis-site-info h1 a {
   text-decoration: none;
@@ -114,6 +117,20 @@ footer {
   color: #ffa552;
   padding: 10px 0px;
   font-weight: bold; }
+
+.error404 .page-title-container {
+  background-color: #4f6367;
+  color: #ffa552;
+  padding: 10px 0px;
+  font-weight: bold; }
+  .error404 .page-title-container h3 {
+    color: #ffa552; }
+
+.error404 .smallis-meh {
+  font-size: 100px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px; }
 
 .archive .archive-title-container {
   background-color: #4f6367;
@@ -160,6 +177,8 @@ footer {
     width: 100%;
     left: 0px;
     box-sizing: border-box; }
+    .single .post-image-container .post-title-container .post-tag {
+      margin-right: 10px; }
 
 .single .smallis-post-container {
   margin: 20px auto; }

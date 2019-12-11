@@ -1,0 +1,30 @@
+.search-results {
+	.page-title-container {
+		background-color: $stormcloud;
+		color: $neoncarrot;
+		padding: 10px 0px;
+		font-weight: bold;
+
+		h3 {
+			color: $neoncarrot;
+		}
+	}
+
+	.smallis-search-results {
+		margin: 20px auto;
+		
+		.smallis-search-result {
+		    -ms-flex-preferred-size: 300px;
+		    flex-basis: 300px;
+		    margin: 10px 20px;
+
+		    a {
+		    	text-decoration: none;
+
+		    	.page-title-container {
+		    		padding: 10px;
+		    	}
+		    }
+		}
+	}
+}

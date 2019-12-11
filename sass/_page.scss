@@ -5,4 +5,32 @@
 		padding: 10px 0px;
 		font-weight: bold;
 	}
+
+	.smallis-page-container {
+    	margin: 20px auto;
+	
+		.page-content {
+			-ms-flex-preferred-size: 700px;
+			flex-basis: 700px;
+			margin-right: 10px;
+		}
+
+		.page-sidebar {
+
+			border-left: 1px solid $stormcloud;
+			padding: 0px 20px;
+			-ms-flex-preferred-size: 200px;
+			flex-basis: 200px;
+
+			li {
+				list-style: none;
+				color: $stormcloud;
+				font-weight: bold;
+
+				a {
+					color: $neoncarrot;
+				}
+			}
+		}
+	}	
 }

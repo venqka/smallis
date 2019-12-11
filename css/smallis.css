@@ -48,15 +48,34 @@ body {
       body .smallis-container {
         width: 1200px; } }
   body .smallis-grid-container {
-    display: grid; }
-  body .smallis-grid-child-1 {
-    grid-row: 1/2; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   body .align-baseline {
-    align-content: baseline; }
-  body .justify-end {
-    justify-self: end; }
-  body .justify-start {
-    justify-self: start; }
+    align-self: baseline; }
+  body .align-baseline {
+    -ms-flex-item-align: baseline;
+    align-self: baseline; }
+  body .justify-space-around {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  body .justify-space-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  body .grid-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  body .smallis-grid-child-1 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1;
+    flex: 1 1; }
+  body .smallis-grid-child-2 {
+    -webkit-box-flex: 2;
+    -ms-flex: 2 2;
+    flex: 2 2; }
+  body .clear-fix {
+    clear: both; }
 
 header .smallis-site-info h1 a {
   text-decoration: none;
@@ -103,12 +122,12 @@ footer {
   font-weight: bold; }
 
 .archive .smallis-posts-container {
-  margin: 20px auto;
-  grid-column-gap: 20px;
-  grid-row-gap: 15px;
-  grid-template-columns: 1fr 1fr 1fr; }
+  margin: 20px auto; }
   .archive .smallis-posts-container .smallis-post {
-    border: 2px solid #4f6367; }
+    border: 2px solid #4f6367;
+    -ms-flex-preferred-size: 300px;
+    flex-basis: 300px;
+    margin: 10px; }
     .archive .smallis-posts-container .smallis-post a {
       text-decoration: none; }
     .archive .smallis-posts-container .smallis-post .smallis-post-image-container {
@@ -143,15 +162,19 @@ footer {
     box-sizing: border-box; }
 
 .single .smallis-post-container {
-  grid-template-columns: 75% 25%;
   margin: 20px auto; }
-
-.single .post-sidebar {
-  border-left: 1px solid #4f6367;
-  padding: 0px 20px; }
-  .single .post-sidebar li {
-    list-style: none;
-    color: #4f6367;
-    font-weight: bold; }
-    .single .post-sidebar li a {
-      color: #ffa552; }
+  .single .smallis-post-container .post-content {
+    -ms-flex-preferred-size: 700px;
+    flex-basis: 700px;
+    margin-right: 10px; }
+  .single .smallis-post-container .post-sidebar {
+    border-left: 1px solid #4f6367;
+    padding: 0px 20px;
+    -ms-flex-preferred-size: 200px;
+    flex-basis: 200px; }
+    .single .smallis-post-container .post-sidebar li {
+      list-style: none;
+      color: #4f6367;
+      font-weight: bold; }
+      .single .smallis-post-container .post-sidebar li a {
+        color: #ffa552; }

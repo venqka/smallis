@@ -107,6 +107,11 @@ footer {
     list-style: none; }
     footer .smallis-footer-columns .smallis-footer-column .widget .widgettitle {
       color: #ffa552; }
+    footer .smallis-footer-columns .smallis-footer-column .widget ul {
+      margin: 0px;
+      padding: 0px; }
+      footer .smallis-footer-columns .smallis-footer-column .widget ul li {
+        list-style: none; }
   footer .smallis-footer-copyright {
     margin: 20px auto; }
     footer .smallis-footer-copyright .smallis-footer-copyright-right {

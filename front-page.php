@@ -15,6 +15,7 @@ get_header();
 			<main id="main" class="site-main">
 
 			<?php
+			do_action( 'smallis_home_before_content' );
 			if ( have_posts() ) {
 
 				// Load posts loop.

@@ -1,46 +1,125 @@
 .smallis-navigation-wrap {
-		ul {
-			li {
-				list-style: none;
-				display: inline-block;
-				margin: 0px 10px;
-				position: relative;
-				a {
-					text-decoration: none;
-					color: $stormcloud;
-					font-weight: bold;
-					&:hover {
-						color: $neoncarrot;
-					}
+	z-index: 2;
+	ul {
+		li {
+			list-style: none;
+			display: inline-block;
+			margin: 0px 10px;
+			position: relative;
+			a {
+				text-decoration: none;
+				color: $stormcloud;
+				font-weight: bold;
+				&:hover {
+					color: $neoncarrot;
 				}
+			}
+			
+			.sub-menu {
+				position: absolute;
+				margin: 0px;
+				display: none;
+				padding: 0px;
+				width: 200px;
+				background-color: $stormcloud;
 				
-				.sub-menu {
-					position: absolute;
+				li {
+					width: 100%;
+					padding: 10px;
 					margin: 0px;
-					display: none;
-					padding: 0px;
-					width: 200px;
-					background-color: $stormcloud;
+					border-bottom: 1px solid $soap;
+					box-sizing: border-box;
+					text-align: center;
 					
-					li {
+					&:last-child {
+						border-bottom: none;
+					}
+					a {
+						color: $neoncarrot;
+						display: block;
 						width: 100%;
-						padding: 10px;
-						margin: 0px;
-						border-bottom: 1px solid $soap;
-						box-sizing: border-box;
-						text-align: center;
-						
-						&:last-child {
-							border-bottom: none;
-						}
-						a {
-							color: $neoncarrot;
-							display: block;
-							width: 100%;
-							height: 100%;
-						}
+						height: 100%;
 					}
 				}
 			}
 		}
 	}
+}
+
+.smallis-desktop-menu {
+	display: none;
+	@include respond-to('small') {
+		display: block;	
+	}
+}
+
+.smallis-mobile-menu {
+	display: block;
+	position: relative;
+	@include respond-to('small') {
+		display: none;	
+	}
+
+	.smallis-menu-toggle {
+		i {
+			font-size: 20px;
+			color: $stormcloud;
+			cursor: pointer;
+		}
+	}
+
+	.smallis-navigation-wrap {
+		display: none;
+		position: absolute;
+		right: 100%;
+		background-color: $stormcloud;
+		width: 200px;
+		ul {
+			padding: 0px;
+
+			.menu-item-has-children {
+				> a {
+					&:after {
+						content: '+';
+						margin-left: 10px;
+					}
+				}
+
+				.sub-menu {
+					position: relative;
+					margin: 0px;
+					display: none;
+					padding: 0px;
+					width: 100%;
+					background-color: #4f6367;
+					left: 0px;
+					top: 10px;
+					li{
+						&:first-child {
+							border-top: 1px solid $soap;
+						}
+					}
+				}	
+			}
+			li {
+				width: 100%;
+				padding: 10px 0;
+				margin: 0px;
+				border-bottom: 1px solid $soap;
+				box-sizing: border-box;
+				text-align: center;
+				
+				&:last-child {
+					border-bottom: none;
+				}
+				a {
+					color: $neoncarrot;
+					display: block;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}	
+	}
+
+}

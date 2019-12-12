@@ -1,7 +1,7 @@
 footer {
-	background-color: $stormcloud;
-	padding: 20px 0;
 
+	padding: 20px;
+	background-color: $stormcloud;
 	color: $white;
 
 	p {
@@ -11,10 +11,16 @@ footer {
 	a {
 		color: $neoncarrot;
 	}
+	@include respond-to('small') {
+		padding: 20px 0;
+	}
 
 	.smallis-footer-columns {
 
 		.smallis-footer-column {
+			-ms-flex-preferred-size: 300px;
+			flex-basis: 300px;
+			
 			.widget {
 				list-style: none;
 

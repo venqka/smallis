@@ -39,15 +39,21 @@
     		-ms-flex-preferred-size: 700px;
 			flex-basis: 700px;
 			margin-right: 10px;
+
+			padding: 20px;
+
     	}
 
     	.post-sidebar {
 
-			border-left: 1px solid $stormcloud;
 			padding: 0px 20px;
 			-ms-flex-preferred-size: 200px;
 			flex-basis: 200px;
 
+			@include respond-to('medium') {
+				border-left: 1px solid $stormcloud;
+			}
+				
 			li {
 				list-style: none;
 				color: $stormcloud;

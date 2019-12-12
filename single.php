@@ -30,7 +30,7 @@ get_header();
 ?>
 					
 					<div class="smallis-container">
-						<div class="smallis-grid-container smallis-post-container justify-space-between">
+						<div class="smallis-grid-container smallis-post-container justify-space-between grid-wrap">
 							<div class="post-content smallis-grid-child-2">
 <?php
 								echo the_content();

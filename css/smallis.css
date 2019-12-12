@@ -22,6 +22,15 @@
   src: local("Lato Regular"), local("Lato-Regular"), url("./assets/font/Lato.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
+/* latin-ext */
+@font-face {
+  font-family: 'Smallis';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Lato Regular"), local("Lato-Regular"), url("./assets/font/Lato.woff2") format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
 /*
 *
 *	Main scss file
@@ -37,7 +46,8 @@ body {
   body h3 {
     color: #4f6367; }
   body .smallis-container {
-    margin: 0px auto; }
+    margin: 0px auto;
+    width: 100%; }
     @media (min-width: 767px) {
       body .smallis-container {
         width: 767px; } }
@@ -80,38 +90,126 @@ body {
     width: 50%;
     margin: 20px auto; }
 
-header .smallis-site-info h1 a {
-  text-decoration: none;
-  color: #4f6367; }
-
-header .smallis-navigation-wrap ul li {
-  list-style: none;
-  display: inline-block;
-  margin: 0px 10px; }
-  header .smallis-navigation-wrap ul li a {
+header .smallis-header-wrap {
+  padding: 0px 20px; }
+  @media (min-width: 767px) {
+    header .smallis-header-wrap {
+      padding: 0px; } }
+  header .smallis-header-wrap .smallis-site-info h1 a {
     text-decoration: none;
+    color: #4f6367; }
+
+.smallis-navigation-wrap {
+  z-index: 2; }
+  .smallis-navigation-wrap ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 10px;
+    position: relative; }
+    .smallis-navigation-wrap ul li a {
+      text-decoration: none;
+      color: #4f6367;
+      font-weight: bold; }
+      .smallis-navigation-wrap ul li a:hover {
+        color: #ffa552; }
+    .smallis-navigation-wrap ul li .sub-menu {
+      position: absolute;
+      margin: 0px;
+      display: none;
+      padding: 0px;
+      width: 200px;
+      background-color: #4f6367; }
+      .smallis-navigation-wrap ul li .sub-menu li {
+        width: 100%;
+        padding: 10px;
+        margin: 0px;
+        border-bottom: 1px solid #d0cfec;
+        box-sizing: border-box;
+        text-align: center; }
+        .smallis-navigation-wrap ul li .sub-menu li:last-child {
+          border-bottom: none; }
+        .smallis-navigation-wrap ul li .sub-menu li a {
+          color: #ffa552;
+          display: block;
+          width: 100%;
+          height: 100%; }
+
+.smallis-desktop-menu {
+  display: none; }
+  @media (min-width: 767px) {
+    .smallis-desktop-menu {
+      display: block; } }
+
+.smallis-mobile-menu {
+  display: block;
+  position: relative; }
+  @media (min-width: 767px) {
+    .smallis-mobile-menu {
+      display: none; } }
+  .smallis-mobile-menu .smallis-menu-toggle i {
+    font-size: 20px;
     color: #4f6367;
-    font-weight: bold; }
-    header .smallis-navigation-wrap ul li a:hover {
-      color: #ffa552; }
+    cursor: pointer; }
+  .smallis-mobile-menu .smallis-navigation-wrap {
+    display: none;
+    position: absolute;
+    right: 100%;
+    background-color: #4f6367;
+    width: 200px; }
+    .smallis-mobile-menu .smallis-navigation-wrap ul {
+      padding: 0px; }
+      .smallis-mobile-menu .smallis-navigation-wrap ul .menu-item-has-children > a:after {
+        content: '+';
+        margin-left: 10px; }
+      .smallis-mobile-menu .smallis-navigation-wrap ul .menu-item-has-children .sub-menu {
+        position: relative;
+        margin: 0px;
+        display: none;
+        padding: 0px;
+        width: 100%;
+        background-color: #4f6367;
+        left: 0px;
+        top: 10px; }
+        .smallis-mobile-menu .smallis-navigation-wrap ul .menu-item-has-children .sub-menu li:first-child {
+          border-top: 1px solid #d0cfec; }
+      .smallis-mobile-menu .smallis-navigation-wrap ul li {
+        width: 100%;
+        padding: 10px 0;
+        margin: 0px;
+        border-bottom: 1px solid #d0cfec;
+        box-sizing: border-box;
+        text-align: center; }
+        .smallis-mobile-menu .smallis-navigation-wrap ul li:last-child {
+          border-bottom: none; }
+        .smallis-mobile-menu .smallis-navigation-wrap ul li a {
+          color: #ffa552;
+          display: block;
+          width: 100%;
+          height: 100%; }
 
 footer {
+  padding: 20px;
   background-color: #4f6367;
-  padding: 20px 0;
   color: #FFF; }
   footer p {
     color: #FFF; }
   footer a {
     color: #ffa552; }
-  footer .smallis-footer-columns .smallis-footer-column .widget {
-    list-style: none; }
-    footer .smallis-footer-columns .smallis-footer-column .widget .widgettitle {
-      color: #ffa552; }
-    footer .smallis-footer-columns .smallis-footer-column .widget ul {
-      margin: 0px;
-      padding: 0px; }
-      footer .smallis-footer-columns .smallis-footer-column .widget ul li {
-        list-style: none; }
+  @media (min-width: 767px) {
+    footer {
+      padding: 20px 0; } }
+  footer .smallis-footer-columns .smallis-footer-column {
+    -ms-flex-preferred-size: 300px;
+    flex-basis: 300px; }
+    footer .smallis-footer-columns .smallis-footer-column .widget {
+      list-style: none; }
+      footer .smallis-footer-columns .smallis-footer-column .widget .widgettitle {
+        color: #ffa552; }
+      footer .smallis-footer-columns .smallis-footer-column .widget ul {
+        margin: 0px;
+        padding: 0px; }
+        footer .smallis-footer-columns .smallis-footer-column .widget ul li {
+          list-style: none; }
   footer .smallis-footer-copyright {
     margin: 20px auto; }
     footer .smallis-footer-copyright .smallis-footer-copyright-right {
@@ -227,12 +325,15 @@ footer {
   .single .smallis-post-container .post-content {
     -ms-flex-preferred-size: 700px;
     flex-basis: 700px;
-    margin-right: 10px; }
+    margin-right: 10px;
+    padding: 20px; }
   .single .smallis-post-container .post-sidebar {
-    border-left: 1px solid #4f6367;
     padding: 0px 20px;
     -ms-flex-preferred-size: 200px;
     flex-basis: 200px; }
+    @media (min-width: 992px) {
+      .single .smallis-post-container .post-sidebar {
+        border-left: 1px solid #4f6367; } }
     .single .smallis-post-container .post-sidebar li {
       list-style: none;
       color: #4f6367;

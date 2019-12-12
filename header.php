@@ -39,9 +39,16 @@
 						<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 					</div><!-- smallis site info -->
 					
-					<div class="smallis-navigation-wrap align-baseline">
+					<div class="smallis-navigation-wrap align-baseline smallis-desktop-menu">
 						<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-					</div><!-- smallis navigation wrap -->	
+					</div><!-- smallis navigation wrap -->
+					<div class="smallis-mobile-menu align-baseline">
+						<span class="smallis-menu-toggle"><i class="icon-menu"></i></span>
+							<div class="smallis-navigation-wrap">
+								<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+							</div>	
+					</div><!-- smallis navigation wrap -->
+					</div>	
 				</div><!-- smallis header wrap-->
 			</div><!-- smallis-container-->			
 		</header>

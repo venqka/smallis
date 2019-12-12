@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'smallis';
-  src: url('../assets/font/smallis.eot?16855367');
-  src: url('../assets/font/smallis.eot?16855367#iefix') format('embedded-opentype'),
-       url('../assets/font/smallis.woff2?16855367') format('woff2'),
-       url('../assets/font/smallis.woff?16855367') format('woff'),
-       url('../assets/font/smallis.ttf?16855367') format('truetype'),
-       url('../assets/font/smallis.svg?16855367#smallis') format('svg');
+  src: url('../assets/font/smallis.eot?67030222');
+  src: url('../assets/font/smallis.eot?67030222#iefix') format('embedded-opentype'),
+       url('../assets/font/smallis.woff2?67030222') format('woff2'),
+       url('../assets/font/smallis.woff?67030222') format('woff'),
+       url('../assets/font/smallis.ttf?67030222') format('truetype'),
+       url('../assets/font/smallis.svg?67030222#smallis') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'smallis';
-    src: url('../font/smallis.svg?16855367#smallis') format('svg');
+    src: url('../font/smallis.svg?67030222#smallis') format('svg');
   }
 }
 */
@@ -59,3 +59,4 @@
 .icon-tag:before { content: '\e801'; } /* '' */
 .icon-author:before { content: '\e802'; } /* '' */
 .icon-date:before { content: '\e803'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */
